@@ -1,0 +1,11 @@
+Задание: типы модальных окон
+Сопоставьте типы модальных окон в браузере с методами WebDriver для взаимодействия с ним:
+
+            accept	dismiss	send_keys
+alert	      x
+confirm	      x            x
+prompt	      x            x        x
+
+
+
+

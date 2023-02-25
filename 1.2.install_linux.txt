@@ -1,0 +1,31 @@
+selenium linux install
+------------------------------
+install python (add to path)
+
+
+
+ubuntu
+----------------------
+python3 --version
+
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install python3.7
+
+
+
+python3 -m pip install pip
+sudo apt-get install -y python3.7-venv
+
+Создадим папку, где будут храниться наши виртуальные окружения, и перейдем в неё.
+
+$ mkdir environments
+$ cd environments
+Создадим виртуальное окружение:
+
+$ python3 -m venv selenium_env
+Активируем окружение:
+
+$ source selenium_env/bin/activate
+
+
+

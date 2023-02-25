@@ -1,0 +1,51 @@
+selenium win install
+------------------------------
+install python (add to path)
+
+mkdir environments
+cd environments
+
+Создадим виртуальное окружение:
+python -m venv selenium_env
+
+Запустим созданный для нас приложением venv файл activate.bat, чтобы активировать окружение:
+selenium_env\Scripts\activate.bat
+
+Если понадобится выйти из нашего окружения, достаточно выполнить команду deactivate:
+Обратите внимание, что после перезапуска терминала необходимо снова активировать нужное окружение.
+
+В нашем виртуальном окружении установим библиотеку Selenium. 
+Проверьте, что вы указали для установки именно версию 3.14.0. 
+Проект Selenium развивается очень быстро и в других версиях могут быть расхождения в наборе методов 
+Selenium и некоторые примеры у вас могут не работать:
+
+pip install selenium==3.14.0
+
+Проверим, что библиотека действительно установлена:
+
+pip list
+
+
+Установка драйвера для браузера: Windows
+===========================================
+
+chrome://version/
+
+Скачайте с сайта https://sites.google.com/chromium.org/driver/ 
+(старая версия сайта https://sites.google.com/a/chromium.org/chromedriver/downloads) 
+драйвер для вашей версии браузера. Разархивируйте скачанный файл.
+
+Создайте на диске C: папку chromedriver и положите разархивированный ранее файл 
+chromedriver.exe в папку C:\chromedriver.
+
+Добавьте в системную переменную PATH папку C:\chromedriver. 
+
+add to system path  C:\chromedriver
+
+restart cmd,  env
+
+run path
+run chromedriver 
+^C
+
+(selenium_env) C:\Users\user>python c:\Users\user\selenium_course\get_method.py
